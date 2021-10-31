@@ -1,6 +1,14 @@
 # Minecraft-Python
 Play minecraft with python3
 
+<div align="center">
+  <img width="1365" alt="스크린샷 2021-10-31 오후 2 11 43" src="https://user-images.githubusercontent.com/16532326/139568970-5867355f-de83-4a39-b7b6-106933cc3a8e.png">
+</div>
+
+<div align="center">
+  <img width="1787" alt="스크린샷 2021-10-31 오후 2 15 19" src="https://user-images.githubusercontent.com/16532326/139568966-4fa8731c-59eb-481e-9443-ccec303399d1.png">
+</div>
+
 ## Getting start
 
 - [Download](https://launcher.mojang.com/v1/objects/fe123682e9cb30031eae351764f653500b7396c9/server.jar) Minecraft server.jar
