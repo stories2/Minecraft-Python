@@ -1,0 +1,22 @@
+
+networks:
+  infra_minecraft:
+    external: true
+
+services:
+  minecraft_jupyter:
+    build: ./
+    image: minecraft-jupyter
+    container_name: minecraft-jupyter-container
+    restart: always
+    networks:
+      - infra_minecraft
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/root/Minecraft-Python/notebook
+    logging:
+        driver: "json-file"
+        options:
+            max-file: "5"
+            max-size: "10m"

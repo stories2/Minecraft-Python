@@ -1,0 +1,22 @@
+networks:
+  infra_minecraft:
+    external: true
+
+services:
+  minecraft_server:
+    build: ./
+    image: minecraft-server
+    container_name: minecraft-server-container
+    restart: always
+    networks:
+      - infra_minecraft
+    ports:
+      - "4711:4711"
+      - "25565:25565"
+    volumes:
+      - ./notebooks:/root/Minecraft-Python/notebook
+    logging:
+        driver: "json-file"
+        options:
+            max-file: "5"
+            max-size: "10m"

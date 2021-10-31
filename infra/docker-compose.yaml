@@ -1,0 +1,25 @@
+version: '3'
+
+networks:
+  minecraft:
+    name: infra_minecraft
+    driver: bridge
+  
+services:
+  nginx:
+    build: ./nginx
+    image: nginx_minecraft
+    networks:
+      - infra_minecraft
+    restart: always
+    volumes:
+      - ./letsencrypt:/etc/letsencrypt
+      - ./well-known:/usr/share/nginx/well-known
+    ports:
+      - "80:80"
+      - "443:443"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: "5"
+            max-size: "10m"
