@@ -25,4 +25,4 @@ EXPOSE 25565
 
 WORKDIR /root/Minecraft-Python/spidgot
 
-CMD [ "java", "-jar", "spigot.jar" ]
+CMD [ "java", "-Xms1024M", "-Xms1024M", "-jar", "spigot.jar" ]
