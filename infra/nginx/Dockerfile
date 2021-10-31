@@ -9,7 +9,7 @@ RUN apt-get install cron -y
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 #cd Home-Server
-#sudo certbot certonly --noninteractive --agree-tos -d rasp.gapmoe.net --register -unsafely-without-email --webroot -w ./well-known/
+#sudo certbot certonly --noninteractive --agree-tos -d light.gapmoe.net --register-unsafely-without-email --webroot -w ./well-known/
 
 EXPOSE 80
 EXPOSE 443

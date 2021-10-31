@@ -1,5 +1,6 @@
 FROM python:3.8.2-buster
 
+RUN apt-get update
 RUN apt-get install vim htop tmux wget -y
 
 WORKDIR /root/
@@ -14,4 +15,4 @@ WORKDIR /root/Minecraft-Python/notebook
 
 EXPOSE 8888
 
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--NotebookApp.token=", "--NotebookApp.base_url=/jupy"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--NotebookApp.token=", "--NotebookApp.base_url=/jupy", "--allow-root"]

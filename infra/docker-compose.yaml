@@ -10,10 +10,10 @@ services:
     build: ./nginx
     image: nginx_minecraft
     networks:
-      - infra_minecraft
+      - minecraft
     restart: always
     volumes:
-      - ./letsencrypt:/etc/letsencrypt
+      - /etc/letsencrypt:/etc/letsencrypt
       - ./well-known:/usr/share/nginx/well-known
     ports:
       - "80:80"

@@ -10,6 +10,8 @@ world_nether/
 world_the_end/
 logs/
 plugins/
+letsencrypt/
+well-known/
 # Distribution / packaging
 .Python
 build/

@@ -14,7 +14,10 @@ services:
       - "4711:4711"
       - "25565:25565"
     volumes:
-      - ./notebooks:/root/Minecraft-Python/notebook
+      - ./world:/root/Minecraft-Python/spidgot/world
+      - ./world_nether:/root/Minecraft-Python/spidgot/world_nether
+      - ./world_the_end:/root/Minecraft-Python/spidgot/world_the_end
+      - ./logs:/root/Minecraft-Python/spidgot/logs
     logging:
         driver: "json-file"
         options:
