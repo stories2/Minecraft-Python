@@ -9,6 +9,7 @@ services:
   nginx:
     build: ./nginx
     image: nginx_minecraft
+    container_name: nginx-minecraft-container
     networks:
       - minecraft
     restart: always

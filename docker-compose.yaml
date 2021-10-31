@@ -18,6 +18,10 @@ services:
       - ./world_nether:/root/Minecraft-Python/spidgot/world_nether
       - ./world_the_end:/root/Minecraft-Python/spidgot/world_the_end
       - ./logs:/root/Minecraft-Python/spidgot/logs
+    deploy:
+      resources:
+        limits:
+          cpus: '0.75'
     logging:
         driver: "json-file"
         options:
