@@ -11,6 +11,8 @@ Play minecraft with python3
 
 ## Getting start
 
+Check the [reference](https://gist.github.com/noahcoad/fc9d3984a5d4d61648269c0a9477c622) link.
+
 - [Download](https://launcher.mojang.com/v1/objects/fe123682e9cb30031eae351764f653500b7396c9/server.jar) Minecraft server.jar
 - [Download](https://cdn.getbukkit.org/spigot/spigot-1.13.1.jar) spidgot 1.13.1
 - [Download](https://dev.bukkit.org/projects/raspberryjuice/files/2496319/download) raspberryjuice-1.11.jar
