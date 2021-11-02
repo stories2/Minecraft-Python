@@ -15,4 +15,4 @@ WORKDIR /root/Minecraft-Python/notebook
 
 EXPOSE 8888
 
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--NotebookApp.token=", "--NotebookApp.base_url=/jupy", "--allow-root"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--NotebookApp.base_url=/jupy", "--allow-root"]
