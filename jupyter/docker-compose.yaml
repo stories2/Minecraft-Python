@@ -11,8 +11,6 @@ services:
     restart: always
     networks:
       - infra_minecraft
-    ports:
-      - "8888:8888"
     volumes:
       - ./notebooks:/root/Minecraft-Python/notebook
     logging:
