@@ -13,6 +13,8 @@ services:
       - infra_minecraft
     volumes:
       - ./notebooks:/root/Minecraft-Python/notebook
+    env_file:
+      - ./.env
     logging:
         driver: "json-file"
         options:
